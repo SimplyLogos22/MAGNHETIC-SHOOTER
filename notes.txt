@@ -1,0 +1,7 @@
+//serveur
+socket.emit("caca", pos.x)
+
+//client
+socket.on('caca', function(troubiblou){
+    
+})

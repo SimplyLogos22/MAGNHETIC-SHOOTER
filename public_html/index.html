@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TDShooter</title>
+        <meta name="description" content="Description du site">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+ 
+    <body>
+       <section id="identification">
+            <form action="" method="get" onsubmit ="Connection(this.form)" name="identification" id="login">
+                <input type="text" name="user" id="user" placeholder="Username">
+                <input type="password" name="password" id="password" placeholder="Password" onSubmit="Connection(this.form)">
+                <input type="button" name="button" value="login" onClick="Connection(this.form)">
+            </form>
+            <form action="" onsubmit="Register(this.form)"  method="get" name="register" id="register">
+                <input type="text" name="user" id="user" placeholder="username">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" name="passwordB" id="passwordB" placeholder="Password verification" onsubmit="Register(this.form)">
+                <input type="button" name="button" value="register" onClick="Register(this.form)">
+            </form>
+            
+       </section>
+        <ul id="interface">
+            <li id="chat">
+               <h1>TDShooter</h1>
+                <form action="" name="Chat" onsubmit="return false" id="formulaire_chat">
+                  <input type="button" name="showGen" id="BtnGen" value="General">
+                  <input type="button" name="showGame" id="BtnGame" value="Game">
+                  <input type="button" name="showTeam" id="BtnTeam" value="Team">
+                   <input type="text" name="message" id="message" placeholder="write something..." onkeypress="validateMsg(event)"/>
+                </form>
+               <section id="zone_chat"><p></p></section>
+            </li>
+            <li id="Game">
+               <section class="Menu">
+                    <section id="Parties">
+                        <ul id="ListGame"></ul>
+                       <input type="button" name="newGame" value="newGame" onClick="game.new()">
+                       <input type="button" name="newGame" value="Refresh" onClick="game.showList()">
+                    </section>
+                    <section id="Lobby">
+                        <section id="PlayerList">
+                            <ul id="teamA"></ul>
+                            <ul id="teamB"></ul>
+                            <input type="button" name ="Ready" class="notReady" id="btnRdy" value="Ready" onclick="game.ready()">
+                            <input type="button" name ="Switch team" value="Switch Team" onclick="game.switchTeam()">
+                            <input type="button" name ="Quit room" value="Go to lobby" onclick="game.exitGame()">
+                        </section>
+                    </section>
+               </section>
+                
+                <section id="infosPerso"><span id="PV">PV : 100/100</span><br><span id="ammu">Munitions : 30/0</span><br><span id="weaponName"></span></section>
+                <section id="weaponSelection">
+                    <form action="" name="weaponSelection">
+                        <ul id="rifles">
+                            <input type="button" name="FN 2000" value="FAMAS" onclick="selectMainWeapon(0)">
+                            <input type="button" name="M4A1" value="G3SG1" onclick="selectMainWeapon(1)">
+                            <input type="button" name="FAMAS" value="SCHMIDT SCOUT" onclick="selectMainWeapon(2)">
+                            <input type="button" name="AK-47" value="AUG" onclick="selectMainWeapon(3)">
+                            <input type="button" name="M16" value="AK-47" onclick="selectMainWeapon(4)">
+                            <input type="button" name="M16" value="M4-A1" onclick="selectMainWeapon(5)">
+                            <input type="button" name="M16" value="AWP" onclick="selectMainWeapon(6)">
+                        </ul>
+                        <ul id="smgs">
+                            <input type="button" name="UZI" value="MP9" onclick="selectMainWeapon(7)">
+                            <input type="button" name="MP5" value="MP7" onclick="selectMainWeapon(8)">
+                            <input type="button" name="P90" value="PP-BIZON" onclick="selectMainWeapon(9)">
+                            <input type="button" name="UMP" value="MAC-10" onclick="selectMainWeapon(10)">
+                            <input type="button" name="AK-74U" value="UMP-45" onclick="selectMainWeapon(11)">
+                            <input type="button" name="AK-74U" value="P90" onclick="selectMainWeapon(12)">
+                        </ul>
+                        <ul id="mchngun">
+                            <input type="button" name="MG3" value="NEGEV" onclick="selectMainWeapon(13)">
+                            <input type="button" name="MG3" value="M249" onclick="selectMainWeapon(14)">
+                        </ul>
+                        <ul id="shotguns">
+                            <input type="button" name="M3" value="SAWED OFF" onclick="selectMainWeapon(15)">
+                            <input type="button" name="SPAS-12" value="NOVA" onclick="selectMainWeapon(16)">
+                            <input type="button" name="SAWED OFF" value="MAG-7" onclick="selectMainWeapon(17)">
+                            <input type="button" name="STRIKER" value="XM1014" onclick="selectMainWeapon(18)">
+                        </ul>
+                        <!--<ul id="pistols">
+                            <input type="button" name="P90" value="P2000">
+                            <input type="button" name="P90" value="TEC-9">
+                            <input type="button" name="P90" value="FIVE-SEVEN">
+                            <input type="button" name="P90" value="GLOCK-18">
+                            <input type="button" name="P90" value="DUAL BERETTAS">
+                            <input type="button" name="P90" value="DESERT EAGLE">
+                        </ul>-->
+                    </form>
+                </section>
+                <canvas id="canvas" width="1000" height="600"></canvas>
+            </li>
+        </ul>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/clavier.js"></script>
+        <script src="js/socket.js"></script>
+
+        <script>
+        
+        </script>
+        
+    </body>
+</html>

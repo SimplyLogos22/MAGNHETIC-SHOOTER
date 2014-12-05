@@ -1,0 +1,57 @@
+----- Version 0.1 -----
+    0.1.1 Création d'un serveur node.js (OK)
+    0.1.2 Détecter la connexion d'un utilisateur sur le serveur (OK)
+    0.1.3 Créer un jeu sur le serveur et le communiquer aux nouveaux arrivants (OK)
+    0.1.4 Chaque utilisateur doit être lié à un ID qui s'incrémente en fonction du nombre de client connecté (OK)
+    0.1.5 Chaque client doit pouvoir retrouver son ID en donnant son pseudo et sont MDP (OK)
+    
+----- Version 0.2 -----
+    0.2.1 La possibilité de créer une nouvelle partie (OK)
+    0.2.2 De rejoindre un jeu (OK)
+    0.2.3 D'avoir une liste des jeux ouverts (OK)
+    0.2.4 On doit pouvoir savoir qui il y a dans la game (OK)
+    0.2.5 on doit enlever les joueurs qui quittent la page (OK)
+    
+----- Version 0.3 -----
+    0.3.1 Avoir un chat d'équipe (/team)
+    0.3.2 Avoir un chat général (Enter) (OK)
+    0.3.3 Avoir un chat de game (/game) (OK)
+    0.3.4 Écrire des messages privés (/to)
+    
+----- Version 0.4 -----
+    0.4.1 Il doit y avoir deux équipes (OK)
+    0.4.2 On doit pouvoir choisir son équipe (OK)
+    0.4.3 Lancer le jeu (OK)
+    
+----- Version 0.5 -----
+    0.5.1 Pouvoir se déplacer (Z-Q-S-D / ↑ ← ↓ →) (OK)
+    0.5.2 Pouvoir tirer (CLICK) (OK)
+    0.5.3 Pouvoir tuer (OK)
+    0.5.4 Avoir des munitions (OK)
+    0.5.5 Pouvoir recharger (R) (OK)
+    
+----- Version 0.6 -----
+    0.6.1 Pouvoir choisir ses armes (OK)
+    0.6.2 Avoir de l'argent (OK)
+    0.6.3 Pouvoir gagner de l'argent
+    0.6.4 Pouvoir acheter des armes (E)
+    0.6.5 Pouvoir avoir une arme secondaire
+    0.6.6 Pouvoir changer d'arme (A)
+    
+----- Version 0.7 -----
+    0.7.1 Savoir qui a tué qui
+    0.7.2 Afficher qui a tué qui
+    0.7.3 Afficher les scores du match
+    0.7.4 Détecter la fin du jeu
+    0.7.5 Afficher le classement en fin de jeu
+    
+----- Version 1.0 -----
+    1.0.1 Avoir une liste d'ami
+    1.0.2 Pouvoir ajouter ses amis
+    
+----- Version 1.1 -----
+    1.1.1 Chaque joueur doit pouvoir retrouver son identifiant sans avoir à se connecter
+    
+----- Version 1.2 -----
+    1.2.1 Pouvoir rajouter des critère lors de la création de game : mdp, nb de joueur, seulement amis, type d'armes utilisées
+    1.2.2 

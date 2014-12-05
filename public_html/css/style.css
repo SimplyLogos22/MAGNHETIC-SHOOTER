@@ -1,0 +1,46 @@
+body{
+    width:100%;
+}
+#interface{
+    margin:auto;
+    width:1200px;
+    margin-top:20px;
+}
+#interface li{
+    display:inline-block;
+    list-style-type: none;
+}
+#zone_chat {
+    width:100%;
+    height:90%;
+    padding:20px 0px 0px 0px;
+    overflow-y: hidden;
+}
+#zone_chat strong {
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+#chat{
+   background-color:grey;
+    height:600px;;
+    width:200px;
+    float:left;
+    padding:10px;
+}
+#Game{
+    background-color:white;
+    height:600px;
+    width:1000px;
+}
+.isReady{
+    color:green;
+}
+#infosPerso{
+    position : absolute;
+    height:50px;
+    width:200px;
+    background-color: green;
+    top:0px;
+    right:0px;
+}
